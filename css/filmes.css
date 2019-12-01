@@ -1,0 +1,196 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Helvetica";
+}
+
+body{
+	background-color: #171717;
+	padding: 0;
+	margin: 0;
+}
+
+.center{
+	max-width: 1480px;
+	margin: 0 auto;
+	padding: 0 2%;
+}
+
+.clear{clear: both;}
+
+header{
+	background: black;
+	padding: 12px 0;
+}
+
+/*
+	Menu 1 - Header 
+*/
+.header-left{
+	float: left;
+}
+
+.header-left img{
+	margin-left: 270px;
+	max-width: 120px;
+}
+
+.menu-header{
+	position: relative;
+	top: -10px;
+	display: inline-block;
+	margin-left: 10px;
+}
+
+.menu-header li {
+	font-size: 14px;
+	display: inline-block;
+	margin-right: 15px;
+}
+
+.menu-header a{
+	color: white;
+	text-decoration: none;
+}
+
+/*
+	Header right
+*/
+
+.header-right{
+	margin-top: 10px;
+	float: right;
+}
+
+.search,
+.notifications{
+	display: inline-block;
+}
+
+
+.notifications{
+	position: relative;
+}
+
+.circle-notifications{
+	position: absolute;
+	right: 0;
+	top: -10;
+	width: 10px;
+	height: 10px;
+	border-radius: 5px;
+	background: #e50914;
+	text-align: center;
+	vertical-align: 20px;
+}
+
+.circle-notifications span{
+	font-size: 12px;
+	color: white;
+}
+
+.header-right i{
+	margin:0 10px;
+	cursor: pointer;
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.header-right a{
+	color: white;
+	text-decoration: none;
+}
+
+
+/*------Banners*/
+.container1{
+	display: flex;
+	height: 50vh;
+}
+
+.section{
+	flex: 2;
+	justify-content: center;
+	align-items: center;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	transition: flex .4s ease;
+	border-width: medium;
+  	border-style: solid;
+  	border-color: #ffffff;
+}
+
+.section .overlay {
+	background-color: rgba(0,0,0,0.7);
+	width: 100%
+	height: 100%;
+	position: absolute;
+	transition: background-color .8s ease;
+}
+
+.section:hover .overlay{
+	background-color: rgba(0,0,0,0.95);
+}
+
+.section .content{
+	z-index: 1;
+}
+
+.section:hover{
+	flex: 3;
+}
+
+.container2{
+	display: flex;
+	height: 50vh;
+}
+
+		
+
+
+.container1 img{
+	margin-top: 50px;
+	margin-left: 130px;
+}
+
+.container1 a{
+	background-color: rgba(100,100,100,0.3);
+	color: white;
+	text-decoration: none;
+	padding: 8px 40px;
+	font-size: 13px;
+	display: inline-block;
+	margin-left: 190px;
+}
+
+.container1 a:hover{
+	background-color: white;
+	color: black;
+}
+
+.container2 img{
+	margin-top: 50px;
+	margin-left: 130px;
+}
+
+.container2 a{
+	background-color: rgba(100,100,100,0.3);
+	color: white;
+	text-decoration: none;
+	padding: 8px 40px;
+	font-size: 13px;
+	display: inline-block;
+	margin-left: 190px;
+}
+
+.container2 a:hover{
+	background-color: white;
+	color: black;
+}
+
+.espace{
+	padding: 5px;
+}
